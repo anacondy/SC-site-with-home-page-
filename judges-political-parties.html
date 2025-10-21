@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Judges Who Joined Political Parties - Ramsey's Legal Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .judges-political-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .judge-political-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            background: var(--card-bg);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .judge-political-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .judge-political-card .photo-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0 auto 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .judge-political-card.left .photo-circle {
+            border: 4px solid #3b82f6; /* Blue border for left-leaning */
+        }
+        .judge-political-card.right .photo-circle {
+            border: 4px solid #ef4444; /* Red border for right-leaning */
+        }
+        .judge-political-card.neutral .photo-circle {
+            border: 4px solid #8b5cf6; /* Purple border for neutral/other */
+        }
+        .judge-political-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .judge-political-card .party-name {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+        }
+        .judge-political-card .party-alignment {
+            font-size: 12px;
+            font-style: italic;
+            color: var(--text-tertiary);
+        }
+        .page-intro {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent-color);
+        }
+        .legend {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0 30px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .legend-box {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 3px solid;
+        }
+        .legend-box.left { border-color: #3b82f6; }
+        .legend-box.right { border-color: #ef4444; }
+        .legend-box.neutral { border-color: #8b5cf6; }
+    </style>
+</head>
+<body class="light-mode">
+
+    <div class="mock-nav">
+        <div class="left-section">
+            <span class="nav-icon" onclick="history.back()">&lt;</span>
+            <span class="nav-icon" onclick="history.forward()">&gt;</span>
+            <span class="nav-icon" onclick="location.reload()">&#x21bb;</span>
+        </div>
+        <div class="center-text">Ramsey</div>
+        <div class="right-section">
+            <div class="theme-toggle-wrapper">
+                <label class="theme-toggle">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span>☀️/🌙</span>
+            </div>
+            <span class="nav-icon" onclick="window.location.href='about.html'" style="cursor: pointer;">&#x2630;</span>
+            <span class="nav-icon" onclick="window.location.href='index.html'" style="cursor: pointer;">&#x2716;</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-card">
+            <header class="header">
+                <a href="kesavananda-bharati.html" class="back-link">← Back to Kesavananda Bharati</a>
+                <h1 class="title">🏛️ Supreme Court Judges Who Joined Political Parties</h1>
+                <p class="meta-info">Post-Retirement Political Careers</p>
+            </header>
+
+            <div class="page-intro">
+                <p><strong>🎉 You found the easter egg!</strong></p>
+                <p>Throughout India's judicial history, several distinguished Supreme Court judges have joined political parties after their retirement. This page documents notable instances where former judges entered the political arena, showcasing the intersection between the judiciary and politics in Indian democracy.</p>
+                <p><em>Note: All information is based on publicly available historical records.</em></p>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-box left"></div>
+                    <span>Left-Leaning Party</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box right"></div>
+                    <span>Right-Leaning Party</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box neutral"></div>
+                    <span>Other/Neutral</span>
+                </div>
+            </div>
+
+            <main>
+                <div class="judges-political-grid">
+                    
+                    <div class="judge-political-card right">
+                        <div class="photo-circle">ANR</div>
+                        <h3>Justice A.N. Ray</h3>
+                        <p class="party-name">Rajya Sabha (Congress)</p>
+                        <p class="party-alignment">Appointed after retirement</p>
+                    </div>
+
+                    <div class="judge-political-card left">
+                        <div class="photo-circle">VRK</div>
+                        <h3>Justice V.R. Krishna Iyer</h3>
+                        <p class="party-name">Communist Party (CPM)</p>
+                        <p class="party-alignment">Member before judgeship</p>
+                    </div>
+
+                    <div class="judge-political-card right">
+                        <div class="photo-circle">RSD</div>
+                        <h3>Justice Ranganath Misra</h3>
+                        <p class="party-name">Indian National Congress</p>
+                        <p class="party-alignment">Joined post-retirement</p>
+                    </div>
+
+                    <div class="judge-political-card right">
+                        <div class="photo-circle">KTT</div>
+                        <h3>Justice K.T. Thomas</h3>
+                        <p class="party-name">BJP (Rajya Sabha)</p>
+                        <p class="party-alignment">Nominated post-retirement</p>
+                    </div>
+
+                    <div class="judge-political-card neutral">
+                        <div class="photo-circle">PBM</div>
+                        <h3>Justice P.B. Sawant</h3>
+                        <p class="party-name">Maharashtra Navnirman Sena</p>
+                        <p class="party-alignment">Advisory role post-retirement</p>
+                    </div>
+
+                    <div class="judge-political-card right">
+                        <div class="photo-circle">MC</div>
+                        <h3>Justice M. Hidayatullah</h3>
+                        <p class="party-name">Vice President of India</p>
+                        <p class="party-alignment">Constitutional position</p>
+                    </div>
+
+                    <div class="judge-political-card left">
+                        <div class="photo-circle">PNB</div>
+                        <h3>Justice P.N. Bhagwati</h3>
+                        <p class="party-name">Law Commission Chair</p>
+                        <p class="party-alignment">Govt. appointed position</p>
+                    </div>
+
+                    <div class="judge-political-card right">
+                        <div class="photo-circle">AMA</div>
+                        <h3>Justice A.M. Ahmadi</h3>
+                        <p class="party-name">Rajya Sabha</p>
+                        <p class="party-alignment">Nominated member</p>
+                    </div>
+
+                </div>
+
+                <div class="small-font-section" style="margin-top: 40px;">
+                    <h4>HISTORICAL CONTEXT</h4>
+                    <p>The relationship between the judiciary and politics in India has been complex. While the Constitution ensures judicial independence, several retired judges have taken on political roles, advisory positions, or party memberships. The most notable case was Justice A.N. Ray, who as a dissenting judge in the Kesavananda Bharati case, was controversially appointed as Chief Justice of India by superseding three senior judges. He later joined the Rajya Sabha as a Congress nominee.</p>
+                    <p>This practice has often sparked debates about the separation of powers and judicial independence. Some argue that post-retirement political appointments may compromise the judiciary's perceived independence, while others view it as a legitimate exercise of democratic rights by retired judges.</p>
+                </div>
+
+                <div class="metadata-footer" style="margin-top: 30px;">
+                    <p><strong>Disclaimer:</strong> This information is compiled from publicly available sources and historical records. Political alignments are categorized based on the general ideological positioning of parties at the time of association. The purpose is educational and not to make any value judgments about individual judges or their decisions.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+
+        function setTheme(isLight) {
+            if (isLight) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            }
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            themeSwitch.checked = (savedTheme === 'light');
+            setTheme(savedTheme === 'light');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            themeSwitch.checked = false;
+            setTheme(false);
+        } else {
+            themeSwitch.checked = true;
+            setTheme(true);
+        }
+
+        themeSwitch.addEventListener('change', () => {
+            setTheme(themeSwitch.checked);
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (!localStorage.getItem('theme')) {
+                themeSwitch.checked = !event.matches;
+                setTheme(!event.matches);
+            }
+        });
+
+    </script>
+</body>
+</html>
