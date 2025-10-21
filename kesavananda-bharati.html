@@ -264,7 +264,7 @@
             }
         });
 
-        // Easter Egg for X button
+        // Easter Egg for X button - Navigate to judges political parties page
         let clickCount = 0;
         function easterEgg() {
             clickCount++;
@@ -273,7 +273,7 @@
             } else if (clickCount === 2) {
                 alert('⚖️ Almost there! One more click...');
             } else if (clickCount === 3) {
-                alert('🏛️ "Justice delayed is justice denied" - Keep exploring landmark cases!');
+                window.location.href = 'judges-political-parties.html';
                 clickCount = 0; // Reset for next time
             }
         }

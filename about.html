@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>About & Support - Ramsey's Legal Archive</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -30,8 +28,8 @@
                 </label>
                 <span>☀️/🌙</span>
             </div>
-            <span class="nav-icon" onclick="window.location.href='index.html'" style="cursor: pointer;">&#x2630;</span>
-            <span class="nav-icon" onclick="easterEgg()" style="cursor: pointer;">&#x2716;</span>
+            <span class="nav-icon" onclick="window.location.href='index.html'">&#x2630;</span>
+            <span class="nav-icon">&#x2716;</span>
         </div>
     </div>
 
@@ -47,14 +45,10 @@
                     <li><strong>Patreon:</strong> <a href="#" target="_blank">[Your Patreon Link Here]</a></li>
                     <li><strong>UPI:</strong> <a href="#" target="_blank">[Your UPI ID Here]</a></li>
                 </ul>
-                <div class="section-separator-line"></div> {/* Separator after Support */}
-
-                <h2>Feedback</h2>
+                <div class="section-separator-line"></div> <h2>Feedback</h2>
                 <p>Have suggestions, corrections, or found a bug? Your feedback is invaluable.</p>
                 <p>Please reach out via: <a href="mailto:your_email@example.com">[Your Feedback Email/Link Here]</a></p>
-                <div class="section-separator-line"></div> {/* Separator after Feedback */}
-
-                <div class="disclaimer">
+                <div class="section-separator-line"></div> <div class="disclaimer">
                     <p><strong>Legal Disclaimer: Shreya Singhal <span class="v-text">v.</span> Union of India (2015)</strong></p>
                     <p>The information presented on this website constitutes fair reporting and analysis of judicial pronouncements, which are matters of public record. The content herein is intended for informational and educational purposes only. In accordance with the principles upheld in *Shreya Singhal v. Union of India*, which struck down Section 66A of the Information Technology Act, 2000 as violative of Article 19(1)(a) of the Constitution, the dissemination of such information is protected under the fundamental right to freedom of speech and expression. This website does not provide legal advice, and the content should not be construed as such. Reliance on any information provided herein is solely at the user's own risk.</p>
                 </div>
@@ -105,20 +99,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.add('loaded');
         });
-
-        // Easter Egg for X button
-        let clickCount = 0;
-        function easterEgg() {
-            clickCount++;
-            if (clickCount === 1) {
-                alert('🎉 You found the easter egg! Click 2 more times...');
-            } else if (clickCount === 2) {
-                alert('⚖️ Almost there! One more click...');
-            } else if (clickCount === 3) {
-                alert('🏛️ "Justice delayed is justice denied" - Keep exploring landmark cases!');
-                clickCount = 0; // Reset for next time
-            }
-        }
 
     </script>
 </body>
