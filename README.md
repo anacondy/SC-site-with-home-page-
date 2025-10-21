@@ -2,6 +2,8 @@
 
 A modern, responsive web application showcasing landmark Supreme Court of India judgments with detailed legal analysis. The project features a clean, minimalist design with a frosted glass effect and comprehensive dark/light mode support.
 
+🌐 **Live Site**: [https://anacondy.github.io/SC-site-with-home-page-/](https://anacondy.github.io/SC-site-with-home-page-/)
+
 ## 🌟 Features
 
 ### 📱 Fully Responsive Design
@@ -191,9 +193,10 @@ In accordance with the principles upheld in *Shreya Singhal v. Union of India*, 
 
 This website does not provide legal advice, and the content should not be construed as such. Reliance on any information provided herein is solely at the user's own risk.
 
-## 👤 Author
+## 👥 Authors
 
-**Ramsey**
+- **Puppy pilot**
+- **anacondy**
 
 ## 🙏 Acknowledgments
 
@@ -213,4 +216,4 @@ If you find this project useful, please consider:
 
 **Note**: This is an educational project showcasing web development skills and legal research. It is not affiliated with any official legal institution.
 
-Made with ⚖️ by Ramsey
+Made with ⚖️ by Puppy pilot & anacondy
