@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Ramsey's Legal Archive</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
                 </label>
                 <span>☀️/🌙</span>
             </div>
-            <span class="nav-icon">&#x2630;</span> <span class="nav-icon">&#x2716;</span>
+            <span class="nav-icon" onclick="window.location.href='about.html'" style="cursor: pointer;">&#x2630;</span> <span class="nav-icon" onclick="easterEgg()" style="cursor: pointer;">&#x2716;</span>
         </div>
     </div>
 
@@ -40,7 +42,7 @@
                 <div class="article-list">
 
                     <div class="article-entry">
-                        <h2><a href="electoral-bonds.html">Electoral Bond Case: ADR <span class="v-text">v.</span> Union of India</a></h2>
+                        <h2><a href="electoralbonds.html">Electoral Bond Case: ADR <span class="v-text">v.</span> Union of India</a></h2>
                         <p class="article-summary">A 5-judge bench unanimously struck down the Electoral Bond Scheme as unconstitutional, citing violations of the right to information under Article 19(1)(a).</p>
                         <span class="article-date">February 15, 2024</span>
                     </div>
@@ -49,6 +51,12 @@
                         <h2><a href="waqf-case.html">Waqf Tribunal Jurisdiction: Maha. Waqf Board <span class="v-text">v.</span> Shaikh Chawla</a></h2>
                         <p class="article-summary">A 2-judge bench clarified the exclusive jurisdiction of Waqf Tribunals under the Waqf Act, 1995, overturning a High Court decision.</p>
                         <span class="article-date">January 10, 2023</span>
+                    </div>
+
+                    <div class="article-entry">
+                        <h2><a href="kesavananda-bharati.html">Kesavananda Bharati <span class="v-text">v.</span> State of Kerala</a></h2>
+                        <p class="article-summary">A landmark 13-judge Constitution Bench established the Basic Structure doctrine, holding that Parliament cannot amend the Constitution to destroy its basic features.</p>
+                        <span class="article-date">April 24, 1973</span>
                     </div>
 
                 </div>
@@ -94,6 +102,20 @@
                 setTheme(!event.matches);
             }
         });
+
+        // Easter Egg for X button
+        let clickCount = 0;
+        function easterEgg() {
+            clickCount++;
+            if (clickCount === 1) {
+                alert('🎉 You found the easter egg! Click 2 more times...');
+            } else if (clickCount === 2) {
+                alert('⚖️ Almost there! One more click...');
+            } else if (clickCount === 3) {
+                alert('🏛️ "Justice delayed is justice denied" - Keep exploring landmark cases!');
+                clickCount = 0; // Reset for next time
+            }
+        }
 
     </script>
 </body>
