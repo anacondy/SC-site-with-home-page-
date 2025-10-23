@@ -34,7 +34,7 @@ Each case includes:
 ### 🎯 Interactive Elements
 - **Navigation Controls**: Browser-style back, forward, and refresh buttons
 - **Hamburger Menu**: Quick access to About page
-- **Easter Egg**: Hidden surprise in the close (X) button
+- **Site Analytics Modal**: Click the X button to view visitor statistics, device breakdown, and tracking data
 - **Smooth Scrolling**: Enhanced reading experience
 - **Frosted Glass Effect**: Modern UI with backdrop blur
 
@@ -43,16 +43,31 @@ Each case includes:
 - **No External Scripts**: All JavaScript is inline for better security audit
 - **HTTPS-Ready**: Designed to work seamlessly with HTTPS deployment
 
+### 📊 Site Tracker & Analytics
+- **Visitor Tracking**: Automatically tracks unique visitors and page visits
+- **Device Detection**: Identifies and displays visitor device types (iPhone, iPad, Mac, Android, Windows, Linux)
+- **Statistics Dashboard**: Interactive modal showing:
+  - Today's visits
+  - Yesterday's visits
+  - Monthly statistics
+  - Unique visitor count
+  - Device breakdown with icons
+- **Privacy-Focused**: All data stored locally in browser's localStorage
+- **Easy Access**: Click the ✖ button in the navigation bar to view analytics
+
 ## 📸 Screenshots
 
 ### Light Mode
-![Homepage Light Mode](https://github.com/user-attachments/assets/80300960-a5c0-4a61-9a36-f064e90c685a)
+![Homepage Light Mode](https://github.com/user-attachments/assets/f13ff09a-6848-42a4-984e-c4eec99ddaa2)
 
 ### Dark Mode
-![Homepage Dark Mode](https://github.com/user-attachments/assets/4362a3d7-f6e5-4a04-a40f-3f3ae8b6ddb5)
+![Homepage Dark Mode](https://github.com/user-attachments/assets/2f04df64-d5fa-4f01-83f8-10f4afd48fe0)
+
+### Site Analytics Modal
+![Site Analytics](https://github.com/user-attachments/assets/dedc8c48-8f25-498b-8c0f-d84e3778c949)
 
 ### Mobile Responsive
-![Mobile View](https://github.com/user-attachments/assets/fc47be0c-2916-40ce-9c2f-e5dbc263c85b)
+![Mobile View](https://github.com/user-attachments/assets/305575cc-58eb-4cfc-98db-223b44dd5363)
 
 ## 🚀 Getting Started
 
@@ -98,6 +113,7 @@ SC-site-with-home-page-/
 ├── kesavananda-bharati.html   # Kesavananda Bharati Case details
 ├── about.html                 # About and support page
 ├── style.css                  # Main stylesheet with responsive design
+├── site-tracker.js            # Site analytics and visitor tracking
 └── README.md                  # This file
 ```
 
