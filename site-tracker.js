@@ -593,18 +593,16 @@
         StatsModal.createModal();
 
         // Find the cross icon and attach click handler
-        // The cross icon has onclick="easterEgg()" in index.html
-        // We need to modify all pages to use the stats modal instead
-        const crossIcons = document.querySelectorAll('.nav-icon');
-        crossIcons.forEach(icon => {
-            if (icon.textContent.trim() === '×' || icon.innerHTML.includes('&#x2716;')) {
-                // Remove existing onclick if any
-                icon.removeAttribute('onclick');
-                icon.style.cursor = 'pointer';
-                icon.addEventListener('click', () => {
-                    StatsModal.show();
-                });
-            }
+        // Use the stats-trigger class to identify the correct icon
+        const statsTriggers = document.querySelectorAll('.stats-trigger');
+        statsTriggers.forEach(trigger => {
+            // Remove existing onclick if any
+            trigger.removeAttribute('onclick');
+            trigger.style.cursor = 'pointer';
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                StatsModal.show();
+            });
         });
     }
 
